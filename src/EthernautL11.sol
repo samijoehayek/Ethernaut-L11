@@ -1,15 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import "openzeppelin-contracts-06/math/SafeMath.sol";
-
 contract EthernautL11 {
-    using SafeMath for uint256;
-
     mapping(address => uint256) public balances;
 
     function donate(address _to) public payable {
-        balances[_to] = balances[_to].add(msg.value);
+        balances[_to] = balances[_to] + msg.value;
     }
 
     function balanceOf(address _who) public view returns (uint256 balance) {

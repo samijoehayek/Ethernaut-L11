@@ -2,7 +2,6 @@
 src = "src"
 out = "out"
 libs = ["lib"]
-solc_version = "0.6.12"
 
 eth_rpc_url = 'https://sepolia.drpc.org'
 etherscan_api_key = '${ETHERSCAN_KEY}'
